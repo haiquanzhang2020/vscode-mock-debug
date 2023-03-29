@@ -74,8 +74,5 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
-    - name: ml
-      uses: github/codeql-action/init@v2
-      with:
-      # Run extended queries including queries using machine learning
         queries: security-extended
+   
